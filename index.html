@@ -38,26 +38,23 @@
   </div>
 
   <!-- HERO / AUTODIAGNÓSTICO -->
-  <section style="position:relative;max-width:1160px;margin:0 auto;padding:34px 24px 60px;">
+  <section id="prl-form" style="position:relative;max-width:1160px;margin:0 auto;padding:34px 24px 60px;">
     <div style="position: relative; overflow: hidden; border-radius: 32px; background: url(&quot;./fisify_super_realistic_photograph_of_an_-ms32uo1f-s0og.png&quot;) center / cover no-repeat; border: 1px solid #EDECF2">
       <div style="position:absolute;top:-90px;right:-70px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#C6B5F4,#FE93A7);filter:blur(20px);opacity:0.55;animation:floaty 7s ease-in-out infinite;"></div>
       <div style="position:absolute;bottom:-120px;left:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#BFD0FF,#A793FF);filter:blur(24px);opacity:0.45;"></div>
 
-      <div style="position: relative; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; padding: 56px 56px; background-color: #F3F1F7">
+      <div style="position: relative; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; padding: 56px 56px; background: linear-gradient(180deg, #EEE9F8, #EBD3E9)">
         <div>
           <div style="display: inline-block; font-size: 13px; font-weight: 600; color: var(--fis-black); background: #fff; border-radius: 999px; padding: 7px 15px; box-shadow: 0 2px 6px rgba(42,43,67,0.06); margin-bottom: 22px">Empieza por aquí</div>
           <h1 style="font-family: 'Philosopher',serif; font-size: 52px; line-height: 1.08; font-weight: 700; margin: 0 0 18px; letter-spacing: -0.01em; color: var(--fis-black)">Descubre en 3&nbsp;minutos el <span style="-webkit-background-clip: text; background-clip: text; color: transparent; background-color: var(--fis-black)"><i style="color: var(--fis-black)"><span style="font-weight: normal;">riesgo musculoesquelético</span></i></span> real de tu plantilla</h1>
           <p style="font-size: 19px; line-height: 1.55; font-weight: 300; color: var(--fis-black); margin: 0 0 30px; max-width: 520px">El autodiagnóstico PRL de Fisify te da una foto honesta de dónde estás en prevención de trastornos musculoesqueléticos y qué mover primero. Sin registro previo.</p>
           <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
-            <a href="https://fisify.com/evaluacion-prl" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 999px; box-shadow: 0px 10px 24px 0px #8B75EE0D; transition: all .22s cubic-bezier(0.22,1,0.36,1); background-color: var(--fis-black)">Hacer el autodiagnóstico
-              <span style="font-size:20px;line-height:0;">→</span>
-            </a>
             <span style="font-size: 14px; color: var(--fis-black); font-weight: 400">⏱ ~3 min · gratis · resultado inmediato</span>
           </div>
         </div>
 
         <div style="display:flex;justify-content:center;">
-          <div style="width:100%;max-width:420px;background:#fff;border-radius:24px;padding:8px;box-shadow:0 20px 48px rgba(42,43,67,0.12);">
+          <div style="width: 468px; max-width: 420px; background: #fff; border-radius: 24px; padding: 8px; box-shadow: 0 20px 48px rgba(42,43,67,0.12); height: 621px">
             <iframe src="https://share-eu1.hsforms.com/2ldgkRwvWTgO91lAWCMApGAf6mpp" title="Autodiagnóstico PRL" style="width:100%;height:640px;border:0;border-radius:18px;" loading="lazy"></iframe>
           </div>
         </div>
@@ -69,7 +66,7 @@
   <section style="max-width:1160px;margin:0 auto;padding:20px 24px 40px;">
     <div style="text-align:center;max-width:680px;margin:0 auto 44px;">
       <div style="display: inline-block; font-size: 13px; font-weight: 600; color: var(--fis-white); border-radius: 999px; padding: 7px 15px; margin-bottom: 18px; background-color: var(--fis-black)">La serie completa · 6 episodios</div>
-      <h2 style="font-family:'Philosopher',serif;font-size:40px;line-height:1.1;font-weight:700;margin:0 0 14px;letter-spacing:-0.01em;">Todo lo que contamos sobre la reforma PRL 2026</h2>
+      <h2 style="font-family:'Philosopher',serif;font-size:40px;line-height:1.1;font-weight:700;margin:0 0 14px;letter-spacing:-0.01em;">Todo lo que contamos sobre<br><i style="font-weight: normal;">&nbsp;la reforma PRL 2026</i></h2>
       <p style="font-size:18px;line-height:1.55;font-weight:300;color:#3F3C63;margin:0;">Seis vídeos cortos, directos y sin humo sobre prevención de riesgos y salud musculoesquelética. Míralos en el orden que quieras.</p>
     </div>
 
@@ -96,7 +93,7 @@
           <div style="padding:20px;display:flex;flex-direction:column;gap:8px;flex:1;">
             <h3 style="font-family:'Philosopher',serif;font-size:18px;font-weight:700;line-height:1.28;margin:0;letter-spacing:0;">{{ ep.title }}</h3>
             <p style="font-size:14px;font-weight:300;line-height:1.45;color:#3F3C63;margin:0;flex:1;">{{ ep.subtitle }}</p>
-            <a href="{{ ep.url }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;margin-top:6px;">Ver el reel <span style="font-size:16px;line-height:0;">→</span></a>
+            <a href="{{ ep.url }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 600; margin-top: 6px; color: var(--fis-black)">Ver el reel <span style="font-size:16px;line-height:0;">→</span></a>
           </div>
         </div>
       </sc-for>
@@ -111,7 +108,7 @@
       <div style="position:relative;">
         <h2 style="font-size: 38px; font-weight: 700; margin: 0 0 14px; letter-spacing: -0.01em; color: var(--fis-purple-50); font-family: 'Philosopher',serif">¿Ya viste la serie? Ahora ponle números a tu empresa</h2>
         <p style="font-size:18px;font-weight:300;color:rgba(255,255,255,0.82);margin:0 auto 30px;max-width:560px;">Vuelve al autodiagnóstico y descubre en 3 minutos qué palancas de prevención mover primero.</p>
-        <a href="https://fisify.com/evaluacion-prl" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#2A2B43;font-weight:600;font-size:17px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,0.25);">Volver al autodiagnóstico <span style="font-size:20px;line-height:0;">→</span></a>
+        <a href="#prl-form" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#2A2B43;font-weight:600;font-size:17px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,0.25);">Volver al autodiagnóstico <span style="font-size:20px;line-height:0;">→</span></a>
       </div>
     </div>
     <div style="text-align:center;font-size:13px;color:#9490a8;margin-top:28px;font-weight:400;">Fisify · Tu fisioterapeuta 24/7 · Diseñando la nueva era de la fisioterapia</div>
