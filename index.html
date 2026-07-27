@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&amp;family=Philosopher:wght@400;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="colors_and_type.css">
+<script src="./image-slot.js"></script>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; }
@@ -36,6 +37,25 @@
       Serie PRL 2026 · completada
     </div>
   </div>
+
+  <!-- PORTADA -->
+  <section style="max-width:1160px;margin:0 auto;padding:20px 24px 10px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;">
+    <div>
+      <h1 style="font-family:'Philosopher',serif;font-size:44px;line-height:1.12;font-weight:700;margin:0 0 18px;letter-spacing:-0.01em;color:#2A2B43;">Toda la reforma PRL 2026, <i style="font-weight: normal;">en un sitio.</i></h1>
+      <p style="font-size:18px;line-height:1.55;font-weight:300;color:#3F3C63;margin:0 0 28px;max-width:480px;">Los 6 vídeos de la serie, y el autodiagnóstico para ponerle números a tu empresa. Empieza por el diagnóstico: 3 minutos y sabes qué mover primero.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+        <a href="#prl-form" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: 16px; padding: 15px 26px; border-radius: 999px; box-shadow: 0px 10px 24px 0px #8B75EE12; background-color: var(--fis-black)">Hacer el autodiagnóstico</a>
+        <a href="#campana" style="display:inline-flex;align-items:center;gap:8px;background:#F7F6FA;color:#2A2B43;font-weight:600;font-size:16px;padding:15px 26px;border-radius:999px;">Ver la serie&nbsp;</a>
+      </div>
+    </div>
+    <div style="position:relative;">
+      <image-slot id="portada-personas" shape="rounded" radius="24" placeholder="Personas sonriendo en un ámbito laboral" style="width:100%;height:340px;"></image-slot>
+      <div style="position: absolute; bottom: -24px; left: -24px; border-radius: 20px; padding: 18px 22px; box-shadow: 0 16px 36px rgba(42,43,67,0.16); background-color: var(--fis-white)">
+        <div style="font-size: 32px; font-weight: 700; letter-spacing: -0.02em; color: var(--fis-black); line-height: 1; font-family: ph">−31%</div>
+        <div style="font-size:13px;font-weight:500;color:#3F3C63;line-height:1.35;margin-top:6px;">bajas musculoesqueléticas<br>con intervención activa</div>
+      </div>
+    </div>
+  </section>
 
   <!-- HERO / AUTODIAGNÓSTICO -->
   <section id="prl-form" style="position:relative;max-width:1160px;margin:0 auto;padding:34px 24px 60px;">
@@ -63,7 +83,7 @@
   </section>
 
   <!-- CAMPAÑA -->
-  <section style="max-width:1160px;margin:0 auto;padding:20px 24px 40px;">
+  <section id="campana" style="max-width:1160px;margin:0 auto;padding:20px 24px 40px;">
     <div style="text-align:center;max-width:680px;margin:0 auto 44px;">
       <div style="display: inline-block; font-size: 13px; font-weight: 600; color: var(--fis-white); border-radius: 999px; padding: 7px 15px; margin-bottom: 18px; background-color: var(--fis-black)">La serie completa · 6 episodios</div>
       <h2 style="font-family:'Philosopher',serif;font-size:40px;line-height:1.1;font-weight:700;margin:0 0 14px;letter-spacing:-0.01em;">Todo lo que contamos sobre<br><i style="font-weight: normal;">&nbsp;la reforma PRL 2026</i></h2>
