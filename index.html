@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&amp;family=Philosopher:wght@400;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_ds/seguimiento-melia-a0d2b16b-fd94-4dfd-a467-76504d0938be/colors_and_type.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  ::selection { background: #EBE6F7; }
+  a { color: #8B75EE; text-decoration: none; }
+  a:hover { color: #7660e0; }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+</style>
+</helmet>
+<div style="font-family:'Outfit',sans-serif;letter-spacing:-0.02em;color:#2A2B43;background:#FFFFFF;overflow-x:hidden;">
+
+  <!-- Top bar -->
+  <div style="display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:0 auto;padding:22px 24px;">
+    <a href="https://fisify.com/demo" target="_blank" rel="noopener" style="display:flex;align-items:center;">
+      <img src="assets/fisify-logo.png" alt="Fisify" style="height:36px;width:auto;display:block;">
+    </a>
+    <div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:#3F3C63;background:#F4FFF2;border:1px solid #AFD7AE;border-radius:999px;padding:7px 14px;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#5aa564;"></span>
+      Serie PRL 2026 · completada
+    </div>
+  </div>
+
+  <!-- HERO / AUTODIAGNÓSTICO -->
+  <section style="position:relative;max-width:1160px;margin:0 auto;padding:34px 24px 60px;">
+    <div style="position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(140deg,#FBF6F9 0%,#F1E8FB 55%,#F6E8F7 100%);border:1px solid #EDECF2;">
+      <div style="position:absolute;top:-90px;right:-70px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#C6B5F4,#FE93A7);filter:blur(20px);opacity:0.55;animation:floaty 7s ease-in-out infinite;"></div>
+      <div style="position:absolute;bottom:-120px;left:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#BFD0FF,#A793FF);filter:blur(24px);opacity:0.45;"></div>
+
+      <div style="position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:40px;align-items:center;padding:56px 56px;">
+        <div>
+          <div style="display:inline-block;font-size:13px;font-weight:600;color:#7660e0;background:#fff;border-radius:999px;padding:7px 15px;box-shadow:0 2px 6px rgba(42,43,67,0.06);margin-bottom:22px;">Empieza por aquí</div>
+          <h1 style="font-family:'Philosopher',serif;font-size:52px;line-height:1.08;font-weight:700;margin:0 0 18px;letter-spacing:-0.01em;">Descubre en 3&nbsp;minutos el <span style="-webkit-background-clip: text; background-clip: text; color: transparent; background-color: var(--fis-black)"><i>riesgo musculoesquelético</i></span> real de tu plantilla</h1>
+          <p style="font-size:19px;line-height:1.55;font-weight:300;color:#3F3C63;margin:0 0 30px;max-width:520px;">El autodiagnóstico PRL de Fisify te da una foto honesta de dónde estás en prevención de trastornos musculoesqueléticos y qué mover primero. Sin registro previo.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+            <a href="https://fisify.com/evaluacion-prl" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 999px; box-shadow: 0 10px 24px rgba(139,117,238,0.35); transition: all .22s cubic-bezier(0.22,1,0.36,1); background-color: var(--fis-black)">Hacer el autodiagnóstico
+              <span style="font-size:20px;line-height:0;">→</span>
+            </a>
+            <span style="font-size:14px;color:#3F3C63;font-weight:400;">⏱ ~3 min · gratis · resultado inmediato</span>
+          </div>
+        </div>
+
+        <div style="display:flex;justify-content:center;">
+          <div style="width:100%;max-width:300px;background:#fff;border-radius:24px;padding:26px;box-shadow:0 20px 48px rgba(42,43,67,0.12);">
+            <div style="font-size: 13px; font-weight: 600; color: var(--fis-black); margin-bottom: 6px">Autodiagnóstico PRL</div>
+            <div style="font-size:20px;font-weight:600;margin-bottom:20px;">¿Cómo de preparada está tu empresa?</div>
+            <sc-for list="{{ checklist }}" as="item" hint-placeholder-count="4">
+              <div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #F1EFF6;">
+                <span style="flex:none;width:26px;height:26px;border-radius:50%;background:#EBE6F7;color:#7660e0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;">✓</span>
+                <span style="font-size:14px;font-weight:400;color:#3F3C63;line-height:1.35;">{{ item }}</span>
+              </div>
+            </sc-for>
+            <div style="margin-top:18px;height:8px;border-radius:999px;background:#F1EFF6;overflow:hidden;">
+              <div style="width:35%;height:100%;background:linear-gradient(90deg,#C6B5F4,#FE93A7);"></div>
+            </div>
+            <div style="font-size:12px;color:#9490a8;margin-top:8px;font-weight:400;">Ejemplo de resultado — el tuyo depende de tus respuestas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPAÑA -->
+  <section style="max-width:1160px;margin:0 auto;padding:20px 24px 40px;">
+    <div style="text-align:center;max-width:680px;margin:0 auto 44px;">
+      <div style="display: inline-block; font-size: 13px; font-weight: 600; color: var(--fis-white); border-radius: 999px; padding: 7px 15px; margin-bottom: 18px; background-color: var(--fis-black)">La serie completa · 6 episodios</div>
+      <h2 style="font-family:'Philosopher',serif;font-size:40px;line-height:1.1;font-weight:700;margin:0 0 14px;letter-spacing:-0.01em;">Todo lo que contamos sobre la reforma PRL 2026</h2>
+      <p style="font-size:18px;line-height:1.55;font-weight:300;color:#3F3C63;margin:0;">Seis vídeos cortos, directos y sin humo sobre prevención de riesgos y salud musculoesquelética. Míralos en el orden que quieras.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+      <sc-for list="{{ episodes }}" as="ep" hint-placeholder-count="6">
+        <div style="display:flex;flex-direction:column;background:#fff;border:1px solid #EDECF2;border-radius:22px;overflow:hidden;box-shadow:0 8px 24px rgba(42,43,67,0.06);">
+          <sc-if value="{{ ep.embedId }}" hint-placeholder-val="{{ false }}">
+            <div style="position:relative;aspect-ratio:9/16;background:#000;">
+              <iframe src="{{ ep.embedSrc }}" title="{{ ep.title }}" style="width:100%;height:100%;border:0;" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share" allowfullscreen=""></iframe>
+            </div>
+          </sc-if>
+          <sc-if value="{{ ep.noEmbed }}" hint-placeholder-val="{{ true }}">
+            <div style="position:relative;aspect-ratio:9/16;background:{{ ep.poster }};display:flex;flex-direction:column;justify-content:space-between;padding:18px;">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+                <span style="font-size:38px;font-weight:800;color:rgba(255,255,255,0.9);letter-spacing:-0.04em;line-height:1;">{{ ep.num }}</span>
+                <span style="font-size:11px;font-weight:600;color:#3F3C63;background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);border-radius:999px;padding:5px 11px;">Reel · {{ ep.date }}</span>
+              </div>
+              <div style="align-self:center;width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,0.92);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(42,43,67,0.2);">
+                <span style="width:0;height:0;border-top:13px solid transparent;border-bottom:13px solid transparent;border-left:20px solid #8B75EE;margin-left:5px;"></span>
+              </div>
+              <div style="font-size:11px;font-weight:500;color:rgba(255,255,255,0.85);">Episodio {{ ep.num }}</div>
+            </div>
+          </sc-if>
+          <div style="padding:20px;display:flex;flex-direction:column;gap:8px;flex:1;">
+            <h3 style="font-family:'Philosopher',serif;font-size:18px;font-weight:700;line-height:1.28;margin:0;letter-spacing:0;">{{ ep.title }}</h3>
+            <p style="font-size:14px;font-weight:300;line-height:1.45;color:#3F3C63;margin:0;flex:1;">{{ ep.subtitle }}</p>
+            <a href="{{ ep.url }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;margin-top:6px;">Ver el reel <span style="font-size:16px;line-height:0;">→</span></a>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section style="max-width:1160px;margin:0 auto;padding:40px 24px 80px;">
+    <div style="position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(135deg,#2A2B43,#3F3C63);padding:60px 40px;text-align:center;color:#fff;">
+      <div style="position:absolute;top:-80px;left:-40px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,#8B75EE,transparent 70%);opacity:0.55;"></div>
+      <div style="position:absolute;bottom:-90px;right:-30px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,#FE93A7,transparent 70%);opacity:0.4;"></div>
+      <div style="position:relative;">
+        <h2 style="font-size: 38px; font-weight: 700; margin: 0 0 14px; letter-spacing: -0.01em; color: var(--fis-purple-50); font-family: 'Philosopher',serif">¿Ya viste la serie? Ahora ponle números a tu empresa</h2>
+        <p style="font-size:18px;font-weight:300;color:rgba(255,255,255,0.82);margin:0 auto 30px;max-width:560px;">Vuelve al autodiagnóstico y descubre en 3 minutos qué palancas de prevención mover primero.</p>
+        <a href="https://fisify.com/evaluacion-prl" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#2A2B43;font-weight:600;font-size:17px;padding:16px 30px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,0.25);">Volver al autodiagnóstico <span style="font-size:20px;line-height:0;">→</span></a>
+      </div>
+    </div>
+    <div style="text-align:center;font-size:13px;color:#9490a8;margin-top:28px;font-weight:400;">Fisify · Tu fisioterapeuta 24/7 · Diseñando la nueva era de la fisioterapia</div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1160,&quot;height&quot;:2200},&quot;videoLinks&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Vídeos&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const posters = [
+      'linear-gradient(150deg,#C6B5F4,#FE93A7)',
+      'linear-gradient(150deg,#BFD0FF,#A793FF)',
+      'linear-gradient(150deg,#8B75EE,#C6B5F4)',
+      'linear-gradient(150deg,#FBB9A0,#FE93A7)',
+      'linear-gradient(150deg,#A793FF,#FE93A7)',
+      'linear-gradient(150deg,#3F3C63,#8B75EE)'
+    ];
+    const raw = [
+      { num: '00', title: 'Introducción · Por qué esta serie', subtitle: 'El espejismo del papel y el coste real del absentismo.', date: '6 may' },
+      { num: '01', title: 'La reforma de 2026 · Lo que cambia (y lo que no)', subtitle: 'Qué hacer hoy con el anteproyecto recién aprobado: salud mental, ergonomía y clima.', date: '21 may' },
+      { num: '02', title: 'Las pausas activas que la ley NO menciona', subtitle: 'Lo que sí funciona cuando el descanso reglamentario no basta.', date: '2 jun' },
+      { num: '03', title: 'Adaptar el trabajo a la persona (sin presupuesto)', subtitle: 'Ajustes reales que no requieren comprar nada nuevo.', date: '18 jun' },
+      { num: '04', title: 'El coste REAL de un dolor de espalda', subtitle: 'Lo que sí sale en la cuenta y nadie calcula.', date: '30 jun' },
+      { num: '05', title: 'Cuando el dolor «no es del trabajo»', subtitle: 'El límite difuso entre contingencia común y profesional.', date: '' }
+    ];
+    const links = (this.props.videoLinks || '').split('\n').map(s => s.trim()).filter(Boolean);
+    const shortsEmbeds = { '04': 'FE33VC5gRpg' };
+    const episodes = raw.map((e, i) => {
+      const embedId = shortsEmbeds[e.num];
+      return {
+        ...e,
+        date: e.date || 'Serie',
+        poster: posters[i],
+        url: embedId ? 'https://youtube.com/shorts/' + embedId : (links[i] || '#'),
+        embedId: !!embedId,
+        noEmbed: !embedId,
+        embedSrc: embedId ? 'https://www.youtube.com/embed/' + embedId : ''
+      };
+    });
+    return {
+      episodes,
+      checklist: [
+        'Evaluación de riesgos musculoesqueléticos al día',
+        'Pausas activas implantadas de verdad',
+        'Puestos adaptados a cada persona',
+        'Datos de absentismo por dolor medidos'
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
