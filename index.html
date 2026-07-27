@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#8B75EE"/><text x="100" y="112" font-size="64" text-anchor="middle" fill="#fff" font-family="sans-serif">F</text></svg>
+</template>
 </head>
 <body>
 <x-dc>
@@ -36,20 +39,20 @@
 
   <!-- HERO / AUTODIAGNÓSTICO -->
   <section style="position:relative;max-width:1160px;margin:0 auto;padding:34px 24px 60px;">
-    <div style="position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(140deg,#FBF6F9 0%,#F1E8FB 55%,#F6E8F7 100%);border:1px solid #EDECF2;">
+    <div style="position: relative; overflow: hidden; border-radius: 32px; background: url(&quot;./fisify_super_realistic_photograph_of_an_-ms32uo1f-s0og.png&quot;) center / cover no-repeat; border: 1px solid #EDECF2">
       <div style="position:absolute;top:-90px;right:-70px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#C6B5F4,#FE93A7);filter:blur(20px);opacity:0.55;animation:floaty 7s ease-in-out infinite;"></div>
       <div style="position:absolute;bottom:-120px;left:-60px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 40% 40%,#BFD0FF,#A793FF);filter:blur(24px);opacity:0.45;"></div>
 
-      <div style="position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:40px;align-items:center;padding:56px 56px;">
+      <div style="position: relative; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; padding: 56px 56px; background-color: #F3F1F7">
         <div>
           <div style="display:inline-block;font-size:13px;font-weight:600;color:#7660e0;background:#fff;border-radius:999px;padding:7px 15px;box-shadow:0 2px 6px rgba(42,43,67,0.06);margin-bottom:22px;">Empieza por aquí</div>
-          <h1 style="font-family:'Philosopher',serif;font-size:52px;line-height:1.08;font-weight:700;margin:0 0 18px;letter-spacing:-0.01em;">Descubre en 3&nbsp;minutos el <span style="-webkit-background-clip: text; background-clip: text; color: transparent; background-color: var(--fis-black)"><i>riesgo musculoesquelético</i></span> real de tu plantilla</h1>
-          <p style="font-size:19px;line-height:1.55;font-weight:300;color:#3F3C63;margin:0 0 30px;max-width:520px;">El autodiagnóstico PRL de Fisify te da una foto honesta de dónde estás en prevención de trastornos musculoesqueléticos y qué mover primero. Sin registro previo.</p>
+          <h1 style="font-family: 'Philosopher',serif; font-size: 52px; line-height: 1.08; font-weight: 700; margin: 0 0 18px; letter-spacing: -0.01em; color: var(--fis-black)">Descubre en 3&nbsp;minutos el <span style="-webkit-background-clip: text; background-clip: text; color: transparent; background-color: var(--fis-black)"><i style="color: var(--fis-black)"><span style="font-weight: normal;">riesgo musculoesquelético</span></i></span> real de tu plantilla</h1>
+          <p style="font-size: 19px; line-height: 1.55; font-weight: 300; color: var(--fis-black); margin: 0 0 30px; max-width: 520px">El autodiagnóstico PRL de Fisify te da una foto honesta de dónde estás en prevención de trastornos musculoesqueléticos y qué mover primero. Sin registro previo.</p>
           <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
-            <a href="https://fisify.com/evaluacion-prl" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 999px; box-shadow: 0 10px 24px rgba(139,117,238,0.35); transition: all .22s cubic-bezier(0.22,1,0.36,1); background-color: var(--fis-black)">Hacer el autodiagnóstico
+            <a href="https://fisify.com/evaluacion-prl" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 999px; box-shadow: 0px 10px 24px 0px #8B75EE0D; transition: all .22s cubic-bezier(0.22,1,0.36,1); background-color: var(--fis-black)">Hacer el autodiagnóstico
               <span style="font-size:20px;line-height:0;">→</span>
             </a>
-            <span style="font-size:14px;color:#3F3C63;font-weight:400;">⏱ ~3 min · gratis · resultado inmediato</span>
+            <span style="font-size: 14px; color: var(--fis-black); font-weight: 400">⏱ ~3 min · gratis · resultado inmediato</span>
           </div>
         </div>
 
@@ -86,7 +89,7 @@
         <div style="display:flex;flex-direction:column;background:#fff;border:1px solid #EDECF2;border-radius:22px;overflow:hidden;box-shadow:0 8px 24px rgba(42,43,67,0.06);">
           <sc-if value="{{ ep.embedId }}" hint-placeholder-val="{{ false }}">
             <div style="position:relative;aspect-ratio:9/16;background:#000;">
-              <iframe src="{{ ep.embedSrc }}" title="{{ ep.title }}" style="width:100%;height:100%;border:0;" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share" allowfullscreen=""></iframe>
+              <iframe src="{{ ep.embedSrc }}" title="{{ ep.title }}" referrerpolicy="strict-origin-when-cross-origin" style="width:100%;height:100%;border:0;" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share" allowfullscreen=""></iframe>
             </div>
           </sc-if>
           <sc-if value="{{ ep.noEmbed }}" hint-placeholder-val="{{ true }}">
@@ -129,6 +132,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1160,&quot;height&quot;:2200},&quot;videoLinks&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Vídeos&quot;}}">
 class Component extends DCLogic {
+  state = { playingEp: null };
   renderVals() {
     const posters = [
       'linear-gradient(150deg,#C6B5F4,#FE93A7)',
@@ -147,7 +151,7 @@ class Component extends DCLogic {
       { num: '05', title: 'Cuando el dolor «no es del trabajo»', subtitle: 'El límite difuso entre contingencia común y profesional.', date: '' }
     ];
     const links = (this.props.videoLinks || '').split('\n').map(s => s.trim()).filter(Boolean);
-    const shortsEmbeds = { '04': 'FE33VC5gRpg' };
+    const shortsEmbeds = { '00': 'nnKGV00sx2Y', '01': 'slns0R36Odk', '02': 'nkpS5HwXtyc', '03': 'zC44IC3rKYw', '04': 'FE33VC5gRpg', '05': 'R2nmPZFKde8' };
     const episodes = raw.map((e, i) => {
       const embedId = shortsEmbeds[e.num];
       return {
@@ -157,7 +161,7 @@ class Component extends DCLogic {
         url: embedId ? 'https://youtube.com/shorts/' + embedId : (links[i] || '#'),
         embedId: !!embedId,
         noEmbed: !embedId,
-        embedSrc: embedId ? 'https://www.youtube.com/embed/' + embedId : ''
+        embedSrc: embedId ? 'https://www.youtube-nocookie.com/embed/' + embedId + '?rel=0&playsinline=1' : ''
       };
     });
     return {

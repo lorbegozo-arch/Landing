@@ -1,0 +1,174 @@
+/* =========================================================================
+   Fisify Design Tokens
+   Source: New Brandbook Fisify.pdf + product screenshots
+   ========================================================================= */
+
+/* ---- Font (Outfit — official brand face) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ===== BRAND COLORS (spec names in quotes) ===== */
+
+  /* Main palette — only 4 primary colors in the brandbook */
+  --fis-black:       #2A2B43; /* "Black" — deep navy ink; primary text + logo */
+  --fis-dark-purple: #3F3C63; /* "Dark purple" — headings, emphasis */
+  --fis-light-pink:  #EBE6F7; /* "Light pink" — surfaces, lilac wash */
+  --fis-white:       #FFFFFF;
+
+  /* Purple accent scale (derived from brand gradient endpoints) */
+  --fis-purple-50:   #F6F2FF;
+  --fis-purple-100:  #EBE6F7;  /* = light-pink */
+  --fis-purple-200:  #D6CCF4;
+  --fis-purple-300:  #C6B5F4;  /* = "Main gradient" FROM */
+  --fis-purple-400:  #A793FF;  /* = "Secondary gradient" TO */
+  --fis-purple-500:  #8B75EE;  /* primary CTA fill (observed in app) */
+  --fis-purple-600:  #7561D9;
+  --fis-purple-700:  #5B4BB8;
+
+  /* Status colors — soft + saturated pairs */
+  --fis-red-soft:    #FFE2E7; /* "Light red" */
+  --fis-red:         #FFA6AB; /* "Red" */
+  --fis-yellow-soft: #FFFAEC; /* "Light yellow" */
+  --fis-yellow:      #FDE8B1; /* "Yellow" */
+  --fis-green-soft:  #F4FFF2; /* "Light green" */
+  --fis-green:       #AFD7AE; /* "Green" */
+
+  /* Pink accent (live badge, warning gradient) */
+  --fis-pink-live:   #FE93A7; /* Main gradient TO */
+  --fis-pink-warn:   #F37C7C; /* Warning gradient TO */
+  --fis-peach-warn:  #FFBE9A; /* Warning gradient FROM */
+  --fis-blue-bg:     #BFD0FF; /* Secondary gradient FROM */
+
+  /* Neutrals (derived to harmonize with #2A2B43) */
+  --fis-ink-900:     #2A2B43;
+  --fis-ink-700:     #3F3C63;
+  --fis-ink-500:     #6B6A85;
+  --fis-ink-400:     #8E8DA4;
+  --fis-ink-300:     #B4B3C4;
+  --fis-ink-200:     #DAD9E3;
+  --fis-ink-100:     #EDECF2;
+  --fis-ink-50:      #F7F6FA;
+
+  /* ===== GRADIENTS (exact brandbook values) ===== */
+  --fis-gradient-main:       linear-gradient(135deg, #C6B5F4 0%, #FE93A7 100%);
+  --fis-gradient-background: linear-gradient(135deg, #FBF6F9 0%, #F6E8F7 100%);
+  --fis-gradient-secondary:  linear-gradient(135deg, #BFD0FF 0%, #A793FF 100%);
+  --fis-gradient-warning:    linear-gradient(135deg, #FFBE9A 0%, #F37C7C 100%);
+
+  /* ===== SEMANTIC ALIASES ===== */
+  --fg-1: var(--fis-ink-900);      /* primary text */
+  --fg-2: var(--fis-ink-700);      /* secondary text */
+  --fg-3: var(--fis-ink-500);      /* muted text */
+  --fg-4: var(--fis-ink-400);      /* disabled / placeholder */
+  --fg-on-accent: #FFFFFF;
+  --bg-1: #FFFFFF;                 /* page bg */
+  --bg-2: var(--fis-ink-50);       /* subtle surface */
+  --bg-3: var(--fis-purple-50);    /* tinted surface */
+  --border-1: var(--fis-ink-200);
+  --border-2: var(--fis-ink-100);
+
+  --accent:        var(--fis-purple-500);
+  --accent-hover:  var(--fis-purple-600);
+  --accent-soft:   var(--fis-purple-100);
+
+  --success:       #4FA76F;
+  --success-bg:    var(--fis-green-soft);
+  --warning:       #B58400;
+  --warning-bg:    var(--fis-yellow-soft);
+  --danger:        #E35A68;
+  --danger-bg:     var(--fis-red-soft);
+  --live:          #FE93A7;
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-sans: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Letter-spacing — brand default is -2% across headings and large body */
+  --ls-tight:   -0.02em;
+  --ls-default: -0.01em;
+  --ls-wide:     0.02em;
+
+  /* Type scale (mobile-first; px values) */
+  --fs-display:  64px;
+  --fs-h1:       44px;
+  --fs-h2:       32px;
+  --fs-h3:       24px;
+  --fs-h4:       20px;
+  --fs-body-lg:  18px;
+  --fs-body:     16px;
+  --fs-body-sm:  14px;
+  --fs-caption:  12px;
+  --fs-micro:    10px;
+
+  --lh-tight: 1.05;
+  --lh-snug:  1.2;
+  --lh-body:  1.5;
+  --lh-loose: 1.7;
+
+  /* ===== SPACING (4px baseline) ===== */
+  --sp-0:   0;
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   20px;
+  --sp-6:   24px;
+  --sp-8:   32px;
+  --sp-10:  40px;
+  --sp-12:  48px;
+  --sp-16:  64px;
+  --sp-20:  80px;
+  --sp-24:  96px;
+
+  /* ===== RADII ===== */
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   16px;
+  --r-xl:   20px;
+  --r-2xl:  24px;
+  --r-3xl:  32px;
+  --r-pill: 999px;
+
+  /* ===== SHADOWS (soft, low-contrast — no hard drop shadows) ===== */
+  --shadow-xs: 0 1px 2px rgba(42,43,67,0.04);
+  --shadow-sm: 0 2px 6px rgba(42,43,67,0.05);
+  --shadow-md: 0 8px 24px rgba(42,43,67,0.06);
+  --shadow-lg: 0 20px 48px rgba(42,43,67,0.08);
+  --shadow-ring: 0 0 0 4px rgba(139,117,238,0.18);
+
+  /* ===== MOTION ===== */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:    120ms;
+  --dur-base:    220ms;
+  --dur-slow:    420ms;
+}
+
+/* ===== BASE SEMANTIC ELEMENTS ===== */
+html { color: var(--fg-1); font-family: var(--font-sans); }
+body { margin: 0; background: var(--bg-1); font-size: var(--fs-body); line-height: var(--lh-body); letter-spacing: var(--ls-default); -webkit-font-smoothing: antialiased; }
+
+h1, .h1 { font: 600 var(--fs-h1)/var(--lh-tight) var(--font-display); letter-spacing: var(--ls-tight); color: var(--fg-1); margin: 0; }
+h2, .h2 { font: 600 var(--fs-h2)/var(--lh-snug) var(--font-display); letter-spacing: var(--ls-tight); color: var(--fg-1); margin: 0; }
+h3, .h3 { font: 600 var(--fs-h3)/var(--lh-snug) var(--font-sans); letter-spacing: var(--ls-tight); color: var(--fg-1); margin: 0; }
+h4, .h4 { font: 500 var(--fs-h4)/var(--lh-snug) var(--font-sans); letter-spacing: var(--ls-default); color: var(--fg-1); margin: 0; }
+p, .p  { font: 400 var(--fs-body)/var(--lh-body) var(--font-sans); color: var(--fg-2); margin: 0; }
+.p-lg  { font-size: var(--fs-body-lg); }
+.p-sm  { font-size: var(--fs-body-sm); }
+.caption { font-size: var(--fs-caption); color: var(--fg-3); letter-spacing: var(--ls-wide); text-transform: none; }
+
+/* Display — brand hero style ("Diseñando la fisioterapia del futuro") */
+.display {
+  font: 600 var(--fs-display)/0.95 var(--font-display);
+  letter-spacing: -0.03em;
+  color: var(--fg-1);
+}
+.display em,
+.display-accent {
+  font-weight: 200;
+  font-style: normal;
+  color: var(--fg-2);
+}
+
+code, kbd { font-family: var(--font-mono); font-size: 0.95em; background: var(--bg-2); padding: 2px 6px; border-radius: 6px; }
